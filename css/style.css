@@ -218,7 +218,8 @@ a {
     text-decoration: none;
     box-shadow: var(--shadow-sm);
     transition: 300ms ease-in-out;
-    margin-left: auto; /* empurra para a direita */
+    /* Remove margin-left: auto */
+    margin-left: var(--spacing-md); /* Espaço harmonioso após o último item do menu */
 }
 
 .lang-toggle:hover {
