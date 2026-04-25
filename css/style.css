@@ -525,8 +525,8 @@ a {
    EDUCATION SECTION (TIMELINE)
    ======================================== */
 
-.education-section {
-    background-color: var(--bg-light);
+.educator-icon {
+    background: linear-gradient(135deg, #70c57b, #acb7c7);
 }
 
 .timeline {
@@ -1332,7 +1332,7 @@ a {
 /* ========================================
    ÍCONES PERSONALIZADOS – JOÃO SIMÕES
    ======================================== */
-   
+
 /* Filosofia / Espiritualidade */
 .philosophy-bg {
     height: 200px;
