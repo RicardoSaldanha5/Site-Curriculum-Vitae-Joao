@@ -1317,7 +1317,6 @@ a {
 
 /* Ícone personalizado para Educador/Tutor */
 .educator-icon {
-    background: linear-gradient(135deg, #48BB78, #6ABF8B);
     width: 60px;
     height: 60px;
     border-radius: var(--radius-lg);
@@ -1327,6 +1326,7 @@ a {
     font-size: 1.75rem;
     margin-bottom: var(--spacing-md);
     color: white;
+    background: linear-gradient(135deg, #48BB78, #6ABF8B);
 }
 
 /* Fundo personalizado para Filosofia/Espiritualidade */
