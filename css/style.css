@@ -526,7 +526,20 @@ a {
    ======================================== */
 
 .educator-icon {
-    background: linear-gradient(135deg, #70c57b, #acb7c7);
+    background: linear-gradient(135deg, #6ddf7c, #678ec9);
+}
+
+.logistics-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+    color: white;
+    background: linear-gradient(135deg, #7b8aa8, #4B5563); /* Cinza profissional */
 }
 
 .timeline {
