@@ -168,6 +168,7 @@ a {
     align-items: center;
     padding-top: var(--spacing-sm);
     padding-bottom: var(--spacing-sm);
+    gap: var(--spacing-lg); /* Adiciona espaçamento uniforme */
 }
 
 .nav-brand {
@@ -190,6 +191,8 @@ a {
     list-style: none;
     gap: var(--spacing-lg);
     align-items: center;
+    margin: 0; /* remove margens automáticas */
+    padding: 0;
 }
 
 .nav-link {
