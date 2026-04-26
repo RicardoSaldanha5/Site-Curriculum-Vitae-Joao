@@ -161,6 +161,71 @@ a {
 .navbar.scrolled {
     box-shadow: var(--shadow-lg);
 }
+/* Garante layout flexível na navbar */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+/* Esconde menu e botão de idioma em mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none !important;
+    }
+
+    /* Mostra o globo mesmo em mobile */
+    .lang-toggle {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius-full);
+        background: white;
+        color: var(--primary-main);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .lang-toggle span {
+        display: none; /* esconde "English" */
+    }
+
+    .lang-toggle:hover {
+        background: var(--primary-main);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+
+    /* Botão dos 3 riscos fica visível */
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: var(--text-primary);
+        border-radius: var(--radius-full);
+        transition: 300ms ease-in-out;
+    }
+}
+
+
+
+/*CORRIGIR*/
 
 .navbar .container {
     display: flex;
