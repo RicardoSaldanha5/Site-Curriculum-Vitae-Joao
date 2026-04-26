@@ -1291,6 +1291,54 @@ a {
     flex-wrap: wrap;
 }
 
+/* ========================================
+   BOTÃO DE DOWNLOAD DO CURRÍCULO
+   ======================================== */
+.cta-box {
+  text-align: center;
+}
+.btn-cv-download {
+  background: white;
+  color: var(--primary-blue);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+  border: 2px solid var(--primary-blue);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.btn-cv-download:hover {
+  background: var(--primary-blue);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+/* Estilo dentro da secção de contacto */
+.contact-section .btn-cv-download {
+  background: rgba(211, 140, 140, 0.95);
+  color: var(--primary-blue-dark);
+  border-color: white;
+}
+
+.contact-section .btn-cv-download:hover {
+  background: rgb(183, 243, 159);
+  color: var(--primary-blue-dark);
+  box-shadow: var(--shadow-xl);
+}
+/* Ajuste fino de posição do botão de CV */
+.contact-section .btn-cv-download {
+  position: relative;
+  top: -12px;
+  
+}
 .social-links {
     display: flex;
     gap: var(--spacing-md);
@@ -1314,6 +1362,8 @@ a {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.15);
 }
+
+
 
 /* ========================================
    FOOTER
