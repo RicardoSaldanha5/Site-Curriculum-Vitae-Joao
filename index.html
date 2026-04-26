@@ -27,27 +27,24 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="logo-text">JS</span>
-            </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#formacao" class="nav-link">Formação</a></li>
-                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-                <li><a href="#competencias" class="nav-link">Competências</a></li>
-                <li><a href="#interesses" class="nav-link">Interesses</a></li>
-                <li><a href="#contato" class="nav-link nav-link-cta">Contato</a></li>
-             
-            </ul>
+    <div class="container">
+        <!-- Logo -->
+        <div class="nav-brand">
+            <span class="logo-text">JS</span>
+        </div>
 
-               <!-- Botão de idioma -->
+        <!-- Menu de navegação (escondido em mobile) -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio" class="nav-link">Início</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#formacao" class="nav-link">Formação</a></li>
+            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+            <li><a href="#competencias" class="nav-link">Competências</a></li>
+            <li><a href="#interesses" class="nav-link">Interesses</a></li>
+            <li><a href="#contato" class="nav-link nav-link-cta">Contato</a></li>
+        </ul>
+
+        <!-- Botão de idioma (visível em todos os tamanhos) -->
         <a href="https://teusite-en/" 
            class="lang-toggle" 
            aria-label="Switch to English version">
@@ -55,8 +52,14 @@
             <span>English</span>
         </a>
 
-        </div>
-    </nav>
+        <!-- ÚNICO botão de toggle mobile -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
     
     <!-- Hero Section -->
     <section id="inicio" class="hero">
