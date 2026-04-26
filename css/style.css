@@ -312,7 +312,73 @@ a {
         gap: var(--spacing-md);
     }
 }
+/* Wrapper para permitir posicionamento relativo */
+.lang-toggle-wrapper {
+    position: relative;
+    display: inline-block;
+}
 
+/* Estilo do botão do globo */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-full);
+    background: white;
+    color: var(--primary-main);
+    box-shadow: var(--shadow-sm);
+    transition: 300ms ease-in-out;
+    text-decoration: none;
+}
+
+.lang-toggle:hover {
+    background: var(--primary-main);
+    color: white;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+/* Tooltip invisível por defeito */
+.lang-tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A202C; /* cinza escuro do footer */
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Mostra tooltip ao passar o rato */
+.lang-toggle-wrapper:hover .lang-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Setinha (opcional) */
+.lang-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 4px solid #1A202C;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
 /* ========================================
    HERO SECTION
    ======================================== */
