@@ -193,8 +193,13 @@ a {
     align-items: center;
     margin: 0;
     padding: 0;
-}
 
+}
+.nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
 .nav-link {
     color: var(--text-secondary);
     font-weight: 500;
