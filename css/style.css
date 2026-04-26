@@ -1323,13 +1323,13 @@ a {
 }
 /* Estilo dentro da secção de contacto */
 .contact-section .btn-cv-download {
-  background: rgba(211, 140, 140, 0.95);
+  background: rgba(148, 241, 136, 0.95);
   color: var(--primary-blue-dark);
   border-color: white;
 }
 
 .contact-section .btn-cv-download:hover {
-  background: rgb(183, 243, 159);
+  background: rgb(106, 199, 102);
   color: var(--primary-blue-dark);
   box-shadow: var(--shadow-xl);
 }
