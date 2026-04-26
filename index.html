@@ -28,10 +28,12 @@
     <!-- Navigation -->
 <nav class="navbar" id="navbar">
     <div class="container">
+        <!-- Logo -->
         <div class="nav-brand">
             <span class="logo-text">JS</span>
         </div>
 
+        <!-- Menu principal (escondido em mobile) -->
         <ul class="nav-menu" id="navMenu">
             <li><a href="#inicio" class="nav-link">Início</a></li>
             <li><a href="#sobre" class="nav-link">Sobre</a></li>
@@ -42,12 +44,15 @@
             <li><a href="#contato" class="nav-link nav-link-cta">Contato</a></li>
         </ul>
 
+        <!-- Ações direita: globo + botão mobile -->
         <div class="nav-actions">
-            <a href="https://teusite-en/" class="lang-toggle" aria-label="Switch to English version">
+            <!-- Botão de idioma -->
+            <a href="https://teusite.com/en/" class="lang-toggle" aria-label="Switch to English version">
                 <i class="fas fa-globe-americas"></i>
-                <span>English</span>
             </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+
+            <!-- Botão toggle (3 riscos) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -607,5 +612,20 @@
             navToggle.classList.toggle('active');
         });
     </script>
+    <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Fecha menu ao clicar num link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
