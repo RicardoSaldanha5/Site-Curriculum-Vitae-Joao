@@ -623,7 +623,18 @@ a {
     box-shadow: var(--shadow-lg);
     transition: 300ms ease-in-out;
 }
+/* Estilo para os cartões clicáveis */
+.stat-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.stat-link:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2xl);
+}
 .stat-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-2xl);
