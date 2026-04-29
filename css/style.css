@@ -624,11 +624,11 @@ a {
     transition: 300ms ease-in-out;
 }
 /* Estilo para os cartões clicáveis */
+/* Torna os cartões clicáveis com feedback visual */
 .stat-link {
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* importante para ocupar todo o espaço da .stat-card */
 }
 
 .stat-link:hover {
