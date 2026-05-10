@@ -657,6 +657,7 @@ a {
 .stat-card p {
     font-size: 0.9375rem;
     opacity: 0.9;
+     color: var(--text-secondary);
 }
 
 /* ========================================
