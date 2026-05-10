@@ -629,7 +629,6 @@ a {
     text-decoration: none;
     color: inherit;
     display: block; /* importante para ocupar todo o espaço da .stat-card */
-    color: white;
 }
 
 .stat-link:hover {
@@ -639,14 +638,12 @@ a {
 .stat-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-2xl);
-    color: white;
 }
 
 .stat-card i {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
     opacity: 0.95;
-    color: white;
 }
 
 .stat-number {
@@ -660,7 +657,6 @@ a {
 .stat-card p {
     font-size: 0.9375rem;
     opacity: 0.9;
-    color: white;
 }
 
 /* ========================================
