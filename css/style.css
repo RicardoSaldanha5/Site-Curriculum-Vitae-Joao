@@ -644,6 +644,7 @@ a {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
     opacity: 0.95;
+    color: white;
 }
 
 .stat-number {
@@ -657,6 +658,7 @@ a {
 .stat-card p {
     font-size: 0.9375rem;
     opacity: 0.9;
+    color: white;
 }
 
 /* ========================================
